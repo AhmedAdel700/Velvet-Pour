@@ -43,10 +43,12 @@ body {
 }
 
 @utility radial-gradient {
-  background: radial-gradient(circle at center,
-      #434343 0%,
-      #000 50%,
-      transparent 100%);
+  background: radial-gradient(
+    circle at center,
+    #434343 0%,
+    #000 50%,
+    transparent 100%
+  );
 }
 
 @utility masked-img {
@@ -62,7 +64,7 @@ body {
   }
 
   nav {
-    @apply fixed z-50 w-full;
+    /* @apply fixed z-50 w-full; */
 
     div {
       @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
@@ -82,7 +84,7 @@ body {
   }
 
   .noisy {
-    @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
+    @apply absolute inset-0 size-full bg-[url("./assets/images/noise.png")];
   }
 
   #hero {
@@ -215,7 +217,7 @@ body {
     .top-grid {
       @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
 
-      >div {
+      > div {
         @apply rounded-3xl overflow-hidden h-72 relative;
       }
 
@@ -227,7 +229,7 @@ body {
     .bottom-grid {
       @apply grid grid-cols-1 md:grid-cols-12 gap-5 md:px-0 px-5;
 
-      >div {
+      > div {
         @apply rounded-3xl overflow-hidden h-72 relative;
       }
 

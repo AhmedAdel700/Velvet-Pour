@@ -11,6 +11,7 @@ function Home() {
     <main>
       <Header />
       <Hero />
+      <div className="h-screen bg-black"></div>
       <Footer />
     </main>
   );
