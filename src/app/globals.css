@@ -373,3 +373,25 @@ body {
     }
   }
 }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: darkgreen black;
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgreen;
+  border-radius: 10px;
+  border: 2px solid black; /* optional border for spacing */
+}
